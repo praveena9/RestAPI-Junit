@@ -21,14 +21,12 @@ public class HelloController {
       return "hello";
       }
 
-<<<<<<< HEAD
-=======
+
       @PostMapping("/hello/add")
     public String add(@PathVariable(name="name") String name)
       {
           names.add(name);
           return "added successfully";
       }
-
->>>>>>> demo
+      
   }
