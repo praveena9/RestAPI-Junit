@@ -28,5 +28,10 @@ public class HelloController {
           names.add(name);
           return "added successfully";
       }
+	@GetMapping("/hello/names")
+	public List<String> getNames()
+	{
+		return names;
+	}
       
   }
