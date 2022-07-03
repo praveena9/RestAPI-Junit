@@ -1,13 +1,15 @@
 package restful.com.restfulapi;
 
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 //import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+
 
 @RestController
 public class HelloController {
+    List<String> names=new ArrayList<>();
   @GetMapping("/hello/{name}")
   public String helloName(@PathVariable(name = "name") String name) {
       return "hello" + name;
@@ -17,8 +19,16 @@ public class HelloController {
 	@GetMapping("/hello")
   public String hello() {
       return "hello";
-   
-
       }
 
+<<<<<<< HEAD
+=======
+      @PostMapping("/hello/add")
+    public String add(@PathVariable(name="name") String name)
+      {
+          names.add(name);
+          return "added successfully";
+      }
+
+>>>>>>> demo
   }
