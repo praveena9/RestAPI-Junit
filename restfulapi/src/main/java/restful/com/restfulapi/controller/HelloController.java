@@ -1,4 +1,4 @@
-package restful.com.restfulapi;
+package restful.com.restfulapi.controller;
 
 import org.springframework.web.bind.annotation.*;
 
