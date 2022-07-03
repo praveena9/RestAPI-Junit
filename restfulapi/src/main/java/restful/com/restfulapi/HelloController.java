@@ -28,7 +28,7 @@ public class HelloController {
           return "added successfully";
       }
 
-	@GetMapping("/hello/names}")
+	@GetMapping("/hello/names")
 	public List<String> getNames()
 	{
 		return names;
